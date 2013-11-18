@@ -1,0 +1,771 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY s "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY a "http://www.daml.org/projects/integration/projects-20000911.daml#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.daml.org/projects/integration/projects-20000911.daml#"
+     xml:base="http://www.daml.org/projects/integration/projects-20000911.daml"
+     xmlns:s="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:a="http://www.daml.org/projects/integration/projects-20000911.daml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.daml.org/projects/integration/projects-20000911.daml"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#agency -->
+
+    <owl:AnnotationProperty rdf:about="&a;agency"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#city -->
+
+    <owl:AnnotationProperty rdf:about="&a;city"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#company -->
+
+    <owl:AnnotationProperty rdf:about="&a;company"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#contract -->
+
+    <owl:AnnotationProperty rdf:about="&a;contract"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#degree -->
+
+    <owl:AnnotationProperty rdf:about="&a;degree">
+        <s:domain rdf:resource="&a;Degree"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#employee -->
+
+    <owl:AnnotationProperty rdf:about="&a;employee"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#field -->
+
+    <owl:AnnotationProperty rdf:about="&a;field">
+        <s:domain rdf:resource="&a;Degree"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#givenName -->
+
+    <owl:AnnotationProperty rdf:about="&a;givenName">
+        <s:domain rdf:resource="&a;Person"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#id -->
+
+    <owl:AnnotationProperty rdf:about="&a;id">
+        <s:domain rdf:resource="&a;Contract"/>
+        <s:domain rdf:resource="&a;Employee"/>
+        <s:domain rdf:resource="&a;WorkLocation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#in -->
+
+    <owl:AnnotationProperty rdf:about="&a;in"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#name -->
+
+    <owl:AnnotationProperty rdf:about="&a;name">
+        <s:domain rdf:resource="&a;Agency"/>
+        <s:domain rdf:resource="&a;Company"/>
+        <s:domain rdf:resource="&a;Location"/>
+        <s:domain rdf:resource="&a;Program"/>
+        <s:domain rdf:resource="&a;School"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#organization -->
+
+    <owl:AnnotationProperty rdf:about="&a;organization"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#part_of -->
+
+    <owl:AnnotationProperty rdf:about="&a;part_of"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#person -->
+
+    <owl:AnnotationProperty rdf:about="&a;person"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#program -->
+
+    <owl:AnnotationProperty rdf:about="&a;program"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#role -->
+
+    <owl:AnnotationProperty rdf:about="&a;role">
+        <s:domain rdf:resource="&a;Contract"/>
+        <s:domain rdf:resource="&a;Role"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#school -->
+
+    <owl:AnnotationProperty rdf:about="&a;school"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#street -->
+
+    <owl:AnnotationProperty rdf:about="&a;street">
+        <s:domain rdf:resource="&a;WorkLocation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#subsidiary_of -->
+
+    <owl:AnnotationProperty rdf:about="&a;subsidiary_of"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#surname -->
+
+    <owl:AnnotationProperty rdf:about="&a;surname">
+        <s:domain rdf:resource="&a;Person"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#title -->
+
+    <owl:AnnotationProperty rdf:about="&a;title">
+        <s:domain rdf:resource="&a;Employee"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#work_address -->
+
+    <owl:AnnotationProperty rdf:about="&a;work_address"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#work_email -->
+
+    <owl:AnnotationProperty rdf:about="&a;work_email">
+        <s:domain rdf:resource="&a;Employee"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#work_phone -->
+
+    <owl:AnnotationProperty rdf:about="&a;work_phone">
+        <s:domain rdf:resource="&a;Employee"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#year -->
+
+    <owl:AnnotationProperty rdf:about="&a;year">
+        <s:domain rdf:resource="&a;Degree"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#zip -->
+
+    <owl:AnnotationProperty rdf:about="&a;zip">
+        <s:domain rdf:resource="&a;WorkLocation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#agency -->
+
+    <owl:ObjectProperty rdf:about="&a;agency">
+        <s:range rdf:resource="&a;Agency"/>
+        <s:domain rdf:resource="&a;Program"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#company -->
+
+    <owl:ObjectProperty rdf:about="&a;company">
+        <s:range rdf:resource="&a;Company"/>
+        <s:domain rdf:resource="&a;Contract"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#contract -->
+
+    <owl:ObjectProperty rdf:about="&a;contract">
+        <s:range rdf:resource="&a;Contract"/>
+        <s:domain rdf:resource="&a;Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#employee -->
+
+    <owl:ObjectProperty rdf:about="&a;employee">
+        <s:range rdf:resource="&a;Employee"/>
+        <s:domain rdf:resource="&a;Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#in -->
+
+    <owl:ObjectProperty rdf:about="&a;in"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#organization -->
+
+    <owl:ObjectProperty rdf:about="&a;organization">
+        <s:domain rdf:resource="&a;Employee"/>
+        <s:range rdf:resource="&a;Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#part_of -->
+
+    <owl:ObjectProperty rdf:about="&a;part_of">
+        <s:domain rdf:resource="&a;Agency"/>
+        <s:range rdf:resource="&a;Agency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#person -->
+
+    <owl:ObjectProperty rdf:about="&a;person">
+        <s:domain rdf:resource="&a;Degree"/>
+        <s:domain rdf:resource="&a;Employee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#program -->
+
+    <owl:ObjectProperty rdf:about="&a;program">
+        <s:domain rdf:resource="&a;Contract"/>
+        <s:range rdf:resource="&a;Program"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#school -->
+
+    <owl:ObjectProperty rdf:about="&a;school">
+        <s:domain rdf:resource="&a;Degree"/>
+        <s:range rdf:resource="&a;School"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#subsidiary_of -->
+
+    <owl:ObjectProperty rdf:about="&a;subsidiary_of">
+        <s:domain rdf:resource="&a;Company"/>
+        <s:range rdf:resource="&a;Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#work_address -->
+
+    <owl:ObjectProperty rdf:about="&a;work_address">
+        <s:domain rdf:resource="&a;Employee"/>
+        <s:range rdf:resource="&a;WorkLocation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#degree -->
+
+    <owl:DatatypeProperty rdf:about="&a;degree">
+        <s:range rdf:resource="&s;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#field -->
+
+    <owl:DatatypeProperty rdf:about="&a;field">
+        <s:range rdf:resource="&s;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#givenName -->
+
+    <owl:DatatypeProperty rdf:about="&a;givenName">
+        <s:range rdf:resource="&s;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#id -->
+
+    <owl:DatatypeProperty rdf:about="&a;id">
+        <s:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#name -->
+
+    <owl:DatatypeProperty rdf:about="&a;name">
+        <s:range rdf:resource="&s;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#role -->
+
+    <owl:DatatypeProperty rdf:about="&a;role">
+        <s:range rdf:resource="&s;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#street -->
+
+    <owl:DatatypeProperty rdf:about="&a;street">
+        <s:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#surname -->
+
+    <owl:DatatypeProperty rdf:about="&a;surname">
+        <s:range rdf:resource="&s;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#title -->
+
+    <owl:DatatypeProperty rdf:about="&a;title">
+        <s:range rdf:resource="&s;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#work_email -->
+
+    <owl:DatatypeProperty rdf:about="&a;work_email">
+        <s:range rdf:resource="&s;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#work_phone -->
+
+    <owl:DatatypeProperty rdf:about="&a;work_phone">
+        <s:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#year -->
+
+    <owl:DatatypeProperty rdf:about="&a;year">
+        <s:range rdf:resource="&s;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#zip -->
+
+    <owl:DatatypeProperty rdf:about="&a;zip">
+        <s:range rdf:resource="&s;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#Agency -->
+
+    <owl:Class rdf:about="&a;Agency">
+        <s:subClassOf rdf:resource="&a;Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#City -->
+
+    <owl:Class rdf:about="&a;City"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#Company -->
+
+    <owl:Class rdf:about="&a;Company">
+        <s:subClassOf rdf:resource="&a;Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#Contract -->
+
+    <owl:Class rdf:about="&a;Contract"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#Degree -->
+
+    <owl:Class rdf:about="&a;Degree"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#Employee -->
+
+    <owl:Class rdf:about="&a;Employee"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#Organization -->
+
+    <owl:Class rdf:about="&a;Organization"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#Program -->
+
+    <owl:Class rdf:about="&a;Program"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#Role -->
+
+    <owl:Class rdf:about="&a;Role"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#School -->
+
+    <owl:Class rdf:about="&a;School">
+        <s:subClassOf rdf:resource="&a;Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#State -->
+
+    <owl:Class rdf:about="&a;State"/>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#WorkLocation -->
+
+    <owl:Class rdf:about="&a;WorkLocation"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Property -->
+
+    <owl:Class rdf:about="&s;Property"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#agency -->
+
+    <owl:NamedIndividual rdf:about="&a;agency">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#city -->
+
+    <owl:NamedIndividual rdf:about="&a;city">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#company -->
+
+    <owl:NamedIndividual rdf:about="&a;company">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#contract -->
+
+    <owl:NamedIndividual rdf:about="&a;contract">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#degree -->
+
+    <owl:NamedIndividual rdf:about="&a;degree">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#employee -->
+
+    <owl:NamedIndividual rdf:about="&a;employee">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#field -->
+
+    <owl:NamedIndividual rdf:about="&a;field">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#givenName -->
+
+    <owl:NamedIndividual rdf:about="&a;givenName">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#id -->
+
+    <owl:NamedIndividual rdf:about="&a;id">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#in -->
+
+    <owl:NamedIndividual rdf:about="&a;in">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#name -->
+
+    <owl:NamedIndividual rdf:about="&a;name">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#organization -->
+
+    <owl:NamedIndividual rdf:about="&a;organization">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#part_of -->
+
+    <owl:NamedIndividual rdf:about="&a;part_of">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#person -->
+
+    <owl:NamedIndividual rdf:about="&a;person">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#program -->
+
+    <owl:NamedIndividual rdf:about="&a;program">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#role -->
+
+    <owl:NamedIndividual rdf:about="&a;role">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#school -->
+
+    <owl:NamedIndividual rdf:about="&a;school">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#street -->
+
+    <owl:NamedIndividual rdf:about="&a;street">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#subsidiary_of -->
+
+    <owl:NamedIndividual rdf:about="&a;subsidiary_of">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#surname -->
+
+    <owl:NamedIndividual rdf:about="&a;surname">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#title -->
+
+    <owl:NamedIndividual rdf:about="&a;title">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#work_address -->
+
+    <owl:NamedIndividual rdf:about="&a;work_address">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#work_email -->
+
+    <owl:NamedIndividual rdf:about="&a;work_email">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#work_phone -->
+
+    <owl:NamedIndividual rdf:about="&a;work_phone">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#year -->
+
+    <owl:NamedIndividual rdf:about="&a;year">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.daml.org/projects/integration/projects-20000911.daml#zip -->
+
+    <owl:NamedIndividual rdf:about="&a;zip">
+        <rdf:type rdf:resource="&s;Property"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

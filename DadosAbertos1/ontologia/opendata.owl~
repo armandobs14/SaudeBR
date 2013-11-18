@@ -1,0 +1,1285 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/opendata/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.nees.com.br/ontologies/2013/opendata/">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://xmlns.com/foaf/0.1/</Import>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Acre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Alagoas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Amapa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Amazonas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Bahia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Ceara"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#EspiritoSanto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Goias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Maranhao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#MatoGrosso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#MatoGrossoDoSul"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#MinasGerais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Para"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Paraiba"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Parana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Pernambuco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Piaui"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAcre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAlagoas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAmapa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAmazonas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSBahia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSCeara"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSEspiritoSanto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSGoias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMaranhao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMatoGrosso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMatoGrossoDoSul"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMinasGerais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSPara"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSParaiba"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSParana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSPernambuco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSPiaui"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRioDeJaneiro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRioGrandeDoNorte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRioGrandeDoSul"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRondonia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRoraima"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSSantaCatarina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSSaoPaulo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSSergipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSTocantins"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RioDeJaneiro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RioGrandeDoNorte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RioGrandeDoSul"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Rondonia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Roraima"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#SantaCatarina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#SaoPaulo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Sergipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Tocantins"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAcre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAlagoas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAmapa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAmazonas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSBahia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSCeara"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSEspiritoSanto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSGoias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMaranhao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMatoGrosso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMatoGrossoDoSul"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMinasGerais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSPara"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSParaiba"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSParana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSPernambuco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSPiaui"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRioDeJaneiro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRioGrandeDoNorte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRioGrandeDoSul"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRondonia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRoraima"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSSantaCatarina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSSaoPaulo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSSergipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSTocantins"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#phone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#population"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#type"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAcre"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAlagoas"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAmapa"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAmazonas"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSBahia"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSCeara"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSEspiritoSanto"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSGoias"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMaranhao"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMatoGrosso"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMatoGrossoDoSul"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMinasGerais"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSPara"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSParaiba"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSParana"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSPernambuco"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSPiaui"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRioDeJaneiro"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRioGrandeDoNorte"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRioGrandeDoSul"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRondonia"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRoraima"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSSantaCatarina"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSSaoPaulo"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSSergipe"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSTocantins"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAcre"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAlagoas"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAmapa"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAmazonas"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSBahia"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSCeara"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSEspiritoSanto"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSGoias"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMaranhao"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMatoGrosso"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMatoGrossoDoSul"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMinasGerais"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSPara"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSParaiba"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSParana"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSPernambuco"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSPiaui"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRioDeJaneiro"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRioGrandeDoNorte"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRioGrandeDoSul"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRondonia"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRoraima"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSSantaCatarina"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSSaoPaulo"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSSergipe"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSTocantins"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Acre"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Alagoas"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Amapa"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Amazonas"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Bahia"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Ceara"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#EspiritoSanto"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Goias"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Maranhao"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#MatoGrosso"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#MatoGrossoDoSul"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#MinasGerais"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Para"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Paraiba"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Parana"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Pernambuco"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Piaui"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAcre"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAcre"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Acre"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAlagoas"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAlagoas"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Alagoas"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAmapa"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAmapa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Amapa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAmazonas"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAmazonas"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Amazonas"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSBahia"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSBahia"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Bahia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSCeara"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSCeara"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Ceara"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSEspiritoSanto"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSEspiritoSanto"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#EspiritoSanto"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSGoias"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSGoias"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Goias"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMaranhao"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMaranhao"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Maranhao"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMatoGrosso"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMatoGrosso"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#MatoGrosso"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMatoGrossoDoSul"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMatoGrossoDoSul"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#MatoGrossoDoSul"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMinasGerais"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMinasGerais"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#MinasGerais"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSPara"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSPara"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Para"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSParaiba"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSParaiba"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Paraiba"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSParana"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSParana"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Parana"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSPernambuco"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSPernambuco"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Pernambuco"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSPiaui"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSPiaui"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Piaui"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRioDeJaneiro"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRioDeJaneiro"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RioDeJaneiro"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRioGrandeDoNorte"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRioGrandeDoNorte"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RioGrandeDoNorte"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRioGrandeDoSul"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRioGrandeDoSul"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RioGrandeDoSul"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRondonia"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRondonia"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Rondonia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRoraima"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRoraima"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Roraima"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSSantaCatarina"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSSantaCatarina"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#SantaCatarina"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSSaoPaulo"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSSaoPaulo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#SaoPaulo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSSergipe"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSSergipe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Sergipe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSTocantins"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSTocantins"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Tocantins"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RioDeJaneiro"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RioGrandeDoNorte"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RioGrandeDoSul"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Rondonia"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Roraima"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#SantaCatarina"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#SaoPaulo"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Sergipe"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Tocantins"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAcre"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAcre"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Acre"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAlagoas"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAlagoas"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Alagoas"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAmapa"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAmapa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Amapa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAmazonas"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAmazonas"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Amazonas"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSBahia"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSBahia"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Bahia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSCeara"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSCeara"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Ceara"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSEspiritoSanto"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSEspiritoSanto"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#EspiritoSanto"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSGoias"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSGoias"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Goias"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMaranhao"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMaranhao"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Maranhao"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMatoGrosso"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMatoGrosso"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#MatoGrosso"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMatoGrossoDoSul"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMatoGrossoDoSul"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#MatoGrossoDoSul"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMinasGerais"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMinasGerais"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#MinasGerais"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSPara"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSPara"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Para"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSParaiba"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSParaiba"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Paraiba"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSParana"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSParana"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Parana"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSPernambuco"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSPernambuco"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Pernambuco"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSPiaui"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSPiaui"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Piaui"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRioDeJaneiro"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRioDeJaneiro"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RioDeJaneiro"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRioGrandeDoNorte"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRioGrandeDoNorte"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RioGrandeDoNorte"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRioGrandeDoSul"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRioGrandeDoSul"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RioGrandeDoSul"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRondonia"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRondonia"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Rondonia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRoraima"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRoraima"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Roraima"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSSantaCatarina"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSSantaCatarina"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#SantaCatarina"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSSaoPaulo"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSSaoPaulo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#SaoPaulo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSSergipe"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSSergipe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Sergipe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSTocantins"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSTocantins"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+            <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Tocantins"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Acre"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Alagoas"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Amapa"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Amazonas"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Bahia"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Ceara"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#EspiritoSanto"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Goias"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Maranhao"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#MatoGrosso"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#MatoGrossoDoSul"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#MinasGerais"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Para"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Paraiba"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Parana"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Pernambuco"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Piaui"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RioDeJaneiro"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RioGrandeDoNorte"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RioGrandeDoSul"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Rondonia"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Roraima"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#SantaCatarina"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#SaoPaulo"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Sergipe"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#Tocantins"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAcre"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAlagoas"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAmapa"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSAmazonas"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSBahia"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSCeara"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSEspiritoSanto"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSGoias"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMaranhao"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMatoGrosso"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMatoGrossoDoSul"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSMinasGerais"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSPara"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSParaiba"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSParana"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSPernambuco"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSPiaui"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRioDeJaneiro"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRioGrandeDoNorte"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRioGrandeDoSul"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRondonia"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSRoraima"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSSantaCatarina"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSSaoPaulo"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSSergipe"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RSTocantins"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#RegionalSuperintendent"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAcre"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAlagoas"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAmapa"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSAmazonas"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSBahia"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSCeara"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSEspiritoSanto"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSGoias"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMaranhao"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMatoGrosso"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMatoGrossoDoSul"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSMinasGerais"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSPara"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSParaiba"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSParana"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSPernambuco"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSPiaui"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRioDeJaneiro"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRioGrandeDoNorte"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRioGrandeDoSul"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRondonia"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSRoraima"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSSantaCatarina"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSSaoPaulo"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSSergipe"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBSTocantins"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasCity"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+    </SymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasCity"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.daml.org/projects/integration/projects-20000911.daml#person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasCity"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.daml.org/projects/integration/projects-20000911.daml#person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasCity"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#hasState"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.daml.org/projects/integration/projects-20000911.daml#id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#population"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#type"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/status"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.daml.org/projects/integration/projects-20000911.daml#id"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.daml.org/projects/integration/projects-20000911.daml#id"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.daml.org/projects/integration/projects-20000911.daml#id"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#phone"/>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#phone"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#population"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#population"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#type"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#UBS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <Class IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.daml.org/projects/integration/projects-20000911.daml#id"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#phone"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#population"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/williams/ontologies/2013/10/opendata#type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.daml.org/projects/integration/projects-20000911.daml#id</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A identifier for some thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.daml.org/projects/integration/projects-20000911.daml#id</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/williams/ontologies/2013/10/opendata#population</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents the population of a state or city.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/williams/ontologies/2013/10/opendata#population</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">population</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/williams/ontologies/2013/10/opendata#type</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A type for UBS.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/williams/ontologies/2013/10/opendata#type</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">type</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
