@@ -1,0 +1,90 @@
+@media (min-width: 768px) {
+	#canvas {
+		background: #00b7ea; /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover,  #00b7ea 0%, #0069bf 100%); /* FF3.6+ */
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#00b7ea), color-stop(100%,#0069bf)); /* Chrome,Safari4+ */
+		background: -webkit-radial-gradient(center, ellipse cover,  #00b7ea 0%,#0069bf 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-radial-gradient(center, ellipse cover,  #00b7ea 0%,#0069bf 100%); /* Opera 12+ */
+		background: -ms-radial-gradient(center, ellipse cover,  #00b7ea 0%,#0069bf 100%); /* IE10+ */
+		background: radial-gradient(ellipse at center,  #00b7ea 0%,#0069bf 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#0069bf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		display: block;
+		width:100%;
+		height: 300px;
+	}
+	
+	#stateDescrition{
+		width:350px;
+		height: 300px;
+		background:  rgba(0,0,0,0.3);
+		margin:-300px 0 0 320px;
+		box-shadow:0px 0px 5px #000;
+		padding:15px;
+		color:#00B7EA;
+	}
+	
+	#stateDescrition p{
+		margin:20px 0;
+		text-align: justify;
+	}
+	
+	
+
+	svg{
+		height: 100%;
+		position:relative;
+		margin:0;
+	}
+}
+
+@media (min-width: 320px) {
+	#canvas {
+		background: #00b7ea; /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover,  #00b7ea 0%, #0069bf 100%); /* FF3.6+ */
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#00b7ea), color-stop(100%,#0069bf)); /* Chrome,Safari4+ */
+		background: -webkit-radial-gradient(center, ellipse cover,  #00b7ea 0%,#0069bf 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-radial-gradient(center, ellipse cover,  #00b7ea 0%,#0069bf 100%); /* Opera 12+ */
+		background: -ms-radial-gradient(center, ellipse cover,  #00b7ea 0%,#0069bf 100%); /* IE10+ */
+		background: radial-gradient(ellipse at center,  #00b7ea 0%,#0069bf 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#0069bf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		display: block;
+		width:100%;
+		height: 300px;
+	}
+	
+	#stateDescrition p{
+		text-align: justify;
+	}
+
+	svg{
+		height: 100%;
+		position:relative;
+		margin:0;
+	}
+}
+
+@media(max-width:320px){
+#canvas {
+		background: #00b7ea; /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover,  #00b7ea 0%, #0069bf 100%); /* FF3.6+ */
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#00b7ea), color-stop(100%,#0069bf)); /* Chrome,Safari4+ */
+		background: -webkit-radial-gradient(center, ellipse cover,  #00b7ea 0%,#0069bf 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-radial-gradient(center, ellipse cover,  #00b7ea 0%,#0069bf 100%); /* Opera 12+ */
+		background: -ms-radial-gradient(center, ellipse cover,  #00b7ea 0%,#0069bf 100%); /* IE10+ */
+		background: radial-gradient(ellipse at center,  #00b7ea 0%,#0069bf 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#0069bf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		display: block;
+		width:100%;
+		height: 300px;
+	}
+	
+	#stateDescrition p{
+		text-align: justify;
+	}
+	
+	svg{
+		height:95%;
+		margin:0;
+	}
+	
+}
