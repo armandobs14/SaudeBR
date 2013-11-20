@@ -61,6 +61,10 @@
 		position:relative;
 		margin:0;
 	}
+
+	table input{
+		width: 100%;
+	}
 }
 
 @media(max-width:320px){
@@ -86,5 +90,12 @@
 		height:95%;
 		margin:0;
 	}
-	
+
+	table{
+		font-size: 10px;
+	}
+
+	table input{
+		width: 100%;
+	}
 }

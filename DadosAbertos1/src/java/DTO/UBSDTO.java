@@ -6,8 +6,8 @@
 package DTO;
 
 import java.io.Serializable;
-import joint_codegen_nsbf6996f0.City;
-import joint_codegen_nsbf6996f0.State;
+import joint.codegen.nsbf6996f0.City;
+import joint.codegen.nsbf6996f0.State;
 
 /**
  *
@@ -26,7 +26,7 @@ public class UBSDTO implements Serializable {
     private String status;
     private String department;
     private String executor;
-    private double investiment_total;
+    private double investiment;
     private double val_2011_2014;
     private double val_pos_2014;
 
@@ -46,12 +46,12 @@ public class UBSDTO implements Serializable {
         this.executor = executor;
     }
 
-    public Double getInvestiment_total() {
-        return investiment_total;
+    public Double getInvestiment() {
+        return investiment;
     }
 
-    public void setInvestiment_total(double investiment_total) {
-        this.investiment_total = investiment_total;
+    public void setInvestiment(double investiment_total) {
+        this.investiment = investiment_total;
     }
 
     public Double getVal_2011_2014() {
@@ -87,13 +87,22 @@ public class UBSDTO implements Serializable {
     }
 
     public CityDTO getCity() {
-        CityDTO cdto = new CityDTO();
-        cdto.setId(city.getId());
-        cdto.setName(city.getFoafName());
-        cdto.setPopulation(city.getPopulation());
-        cdto.setState(city.getHasState());
-        cdto.setUf(city.getHasState().getUf());
-        return cdto;
+        CityDTO cityDTO = new CityDTO();
+        cityDTO.setId(city.getId());
+        cityDTO.setName(city.getFoafName());
+        cityDTO.setPopulation(city.getPopulation());
+        cityDTO.setState(city.getHasState());
+        if (city.getNumberOfUBSCompleted() == null) {
+            city.setNumberOfUBSCompleted(0);
+        } else {
+            cityDTO.setNumberOfUBSCompleted(city.getNumberOfUBSCompleted());
+        }
+        if (city.getNumberOfUBSProvided() == null) {
+            city.setNumberOfUBSProvided(0);
+        } else {
+            cityDTO.setNumberOfUBSProvided(city.getNumberOfUBSProvided());
+        }
+        return cityDTO;
     }
 
     public void setCity(City city) {

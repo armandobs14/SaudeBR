@@ -65,7 +65,6 @@
     <ObjectProperty rdf:about="http://www.daml.org/projects/integration/projects-20000911.daml#person">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:range rdf:resource="&foaf;Person"/>
-        <rdfs:domain rdf:resource="&foaf;Project"/>
     </ObjectProperty>
     
 
@@ -148,12 +147,25 @@
     
 
 
+    <!-- http://www.nees.com.br/ontologies/2013/opendata#investiment -->
+
+    <DatatypeProperty rdf:about="http://www.nees.com.br/ontologies/2013/opendata#investiment">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.nees.com.br/ontologies/2013/opendata#City"/>
+        <rdfs:domain rdf:resource="http://www.nees.com.br/ontologies/2013/opendata#State"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+        <rdfs:domain rdf:resource="&foaf;Project"/>
+    </DatatypeProperty>
+    
+
+
     <!-- http://www.nees.com.br/ontologies/2013/opendata#investiment_total -->
 
     <DatatypeProperty rdf:about="http://www.nees.com.br/ontologies/2013/opendata#investiment_total">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.nees.com.br/ontologies/2013/opendata#City"/>
+        <rdfs:domain rdf:resource="http://www.nees.com.br/ontologies/2013/opendata#State"/>
         <rdfs:range rdf:resource="&xsd;double"/>
-        <rdfs:domain rdf:resource="&foaf;Project"/>
     </DatatypeProperty>
     
 
@@ -250,6 +262,8 @@
 
     <DatatypeProperty rdf:about="http://www.nees.com.br/ontologies/2013/opendata#val_2011_2014">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.nees.com.br/ontologies/2013/opendata#City"/>
+        <rdfs:domain rdf:resource="http://www.nees.com.br/ontologies/2013/opendata#State"/>
         <rdfs:range rdf:resource="&xsd;double"/>
         <rdfs:domain rdf:resource="&foaf;Project"/>
     </DatatypeProperty>
@@ -260,6 +274,8 @@
 
     <DatatypeProperty rdf:about="http://www.nees.com.br/ontologies/2013/opendata#val_pos_2014">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.nees.com.br/ontologies/2013/opendata#City"/>
+        <rdfs:domain rdf:resource="http://www.nees.com.br/ontologies/2013/opendata#State"/>
         <rdfs:range rdf:resource="&xsd;double"/>
         <rdfs:domain rdf:resource="&foaf;Project"/>
     </DatatypeProperty>
@@ -270,6 +286,9 @@
 
     <rdf:Description rdf:about="&foaf;name">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.nees.com.br/ontologies/2013/opendata#City"/>
+        <rdfs:domain rdf:resource="http://www.nees.com.br/ontologies/2013/opendata#State"/>
+        <rdfs:domain rdf:resource="&foaf;Project"/>
     </rdf:Description>
     
 
@@ -959,38 +978,6 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Acre"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Alagoas"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Amapa"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Amazonas"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Bahia"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Ceara"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#DistritoFederal"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#EspiritoSanto"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Goias"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Maranhao"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#MatoGrosso"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#MatoGrossoDoSul"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#MinasGerais"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Para"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Paraiba"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Parana"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Pernambuco"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Piaui"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#RioDeJaneiro"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#RioGrandeDoNorte"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#RioGrandeDoSul"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Rondonia"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Roraima"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#SantaCatarina"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#SaoPaulo"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Sergipe"/>
-            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Tocantins"/>
-        </members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#UBSAcre"/>
             <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#UBSAlagoas"/>
             <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#UBSAmapa"/>
@@ -1018,6 +1005,38 @@
             <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#UBSSaoPaulo"/>
             <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#UBSSergipe"/>
             <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#UBSTocantins"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Acre"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Alagoas"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Amapa"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Amazonas"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Bahia"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Ceara"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#DistritoFederal"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#EspiritoSanto"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Goias"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Maranhao"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#MatoGrosso"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#MatoGrossoDoSul"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#MinasGerais"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Para"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Paraiba"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Parana"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Pernambuco"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Piaui"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#RioDeJaneiro"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#RioGrandeDoNorte"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#RioGrandeDoSul"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Rondonia"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Roraima"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#SantaCatarina"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#SaoPaulo"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Sergipe"/>
+            <rdf:Description rdf:about="http://www.nees.com.br/ontologies/2013/opendata#Tocantins"/>
         </members>
     </rdf:Description>
 </rdf:RDF>

@@ -6,7 +6,7 @@
 package DTO;
 
 import java.io.Serializable;
-import joint_codegen_nsbf6996f0.State;
+import joint.codegen.nsbf6996f0.State;
 /*
  *
  * @author Judson
@@ -15,13 +15,47 @@ import joint_codegen_nsbf6996f0.State;
 public class CityDTO implements Serializable {
 
     private String name;
-    private String uf;
-    private String codigo;
-    private int id;
+    private Integer id;
     private State state;
     private int population;
     private int numberOfUBSCompleted;
     private int numberOfUBSProvided;
+    private Double val_2011_2014;
+    private Double val_pos_2014;
+    private Double investment;
+    private Double investment_total;
+
+    public Double getVal_2011_2014() {
+        return val_2011_2014;
+    }
+
+    public void setVal_2011_2014(Double val_2011_2014) {
+        this.val_2011_2014 = val_2011_2014;
+    }
+
+    public Double getVal_pos_2014() {
+        return val_pos_2014;
+    }
+
+    public void setVal_pos_2014(Double val_pos_2014) {
+        this.val_pos_2014 = val_pos_2014;
+    }
+
+    public Double getInvestment() {
+        return investment;
+    }
+
+    public void setInvestment(Double investment) {
+        this.investment = investment;
+    }
+
+    public Double getInvestment_total() {
+        return investment_total;
+    }
+
+    public void setInvestment_total(Double investment_total) {
+        this.investment_total = investment_total;
+    }
 
     public int getNumberOfUBSCompleted() {
         return numberOfUBSCompleted;
@@ -47,11 +81,11 @@ public class CityDTO implements Serializable {
         this.population = population;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -67,22 +101,6 @@ public class CityDTO implements Serializable {
 
     public void setState(State state) {
         this.state = state;
-    }
-
-    public String getUf() {
-        return uf;
-    }
-
-    public void setUf(String uf) {
-        this.uf = uf;
-    }
-
-    public String getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
     }
 
     public void setName(String name) {

@@ -19,6 +19,42 @@ public class StateDTO implements Serializable {
     private int population;
     private String uf;
     private String name;
+    private Double val_2011_2014;
+    private Double val_pos_2014;
+    private Double investment;
+
+    public Double getVal_2011_2014() {
+        return val_2011_2014;
+    }
+
+    public void setVal_2011_2014(Double val_2011_2014) {
+        this.val_2011_2014 = val_2011_2014;
+    }
+
+    public Double getVal_pos_2014() {
+        return val_pos_2014;
+    }
+
+    public void setVal_pos_2014(Double val_pos_2014) {
+        this.val_pos_2014 = val_pos_2014;
+    }
+
+    public Double getInvestment() {
+        return investment;
+    }
+
+    public void setInvestment(Double investment) {
+        this.investment = investment;
+    }
+
+    public Double getInvestment_total() {
+        return investment_total;
+    }
+
+    public void setInvestment_total(Double investment_total) {
+        this.investment_total = investment_total;
+    }
+    private Double investment_total;
 
     public int getId() {
         return id;

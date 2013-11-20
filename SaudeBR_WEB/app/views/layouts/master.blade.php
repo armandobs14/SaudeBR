@@ -3,7 +3,7 @@
     <head>
         <title>Campeonato de Dados Abertos</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
         <?php
 
             /* SCRIPTS */
@@ -14,8 +14,8 @@
             /* SCRIPTS */
             echo HTML::script('js/jquery-2.0.3.min.js'); // Jquery
             echo HTML::script('dist/js/bootstrap.min.js'); // Bootstrap Twitter
+            echo HTML::script('js/helpers.js'); // App
             echo HTML::script('js/App.js'); // App
-
         ?>
         <script type="text/javascript">
             $(document).ready(function() {
@@ -50,21 +50,10 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Estados<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <!--<li>
-                                <?php echo HTML::link('ubs/AC','Acre'); ?>
-                            </li>
-                            <li>
-                                <?php echo HTML::link('ubs/AL','Alagoas'); ?>
-                            </li>
-                            <li>
-                                <?php echo HTML::link('ubs/BA','Bahia'); ?>
-                            </li>
-                            <li>
-                                <a href="#">...</a>
-                            </li>
-                        -->
+                        
                         @foreach ($states as $state)
-                            <li><?php echo HTML::link('ubs/'.$state["uf"],utf8_encode($state['name'])); ?></li>
+                            <?php $encodedName = utf8_encode($state['name']); ?>
+                            <li><?php echo HTML::link('ubs/'.$encodedName,$encodedName); ?></li>
                             
 
                         @endforeach

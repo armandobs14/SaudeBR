@@ -10,14 +10,9 @@ import DTO.StateDTO;
 import DTO.UBSDTO;
 import dadosabertos.kernel.ClassePrincipalProvisoria;
 import java.util.ArrayList;
-import java.util.List;
 import javax.jws.WebService;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
-import joint_codegen_foaf.Person;
-import joint_codegen_nsbf6996f0.City;
-import joint_codegen_nsbf6996f0.State;
-import joint_codegen_nsbf6996f0.UBS;
 
 /**
  *
@@ -26,49 +21,28 @@ import joint_codegen_nsbf6996f0.UBS;
 @WebService(serviceName = "DadosAbertosServicos")
 public class DadosAbertosServicos {
 
-//    @WebMethod(operationName = "createState")
-//    public void createStates(@WebParam(name = "id") int id, @WebParam(name = "name") String name, @WebParam(name = "population") int population) {
-//        
-//        ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
-//        objeto.createStates(id, name, population);
-//    }
-    /*    @WebMethod(operationName = "createPerson")
-     public void createPerson(@WebParam(name = "name") String name, @WebParam(name = "phone") String phone){
-     ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
-     objeto.createPerson(name, phone);
-     }*/
-    @WebMethod(operationName = "createCity")
-    public void createCity() {
-        ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
-        objeto.createCity();
-    }
-
-    @WebMethod(operationName = "createUBS")
-    public void createUBS() {
-        ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
-        objeto.createUBSReady();
-        objeto.createUBS_PAC();
-        objeto.countPopulationAndUBS_ByState();
-    }
-
     @WebMethod(operationName = "retrieveAllState")
     public ArrayList<StateDTO> retrieveAllState() {
-
         ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
         return objeto.retrieveAllState();
     }
 
-    @WebMethod(operationName = "retrieveCity")
-    public CityDTO retrieveCity(@WebParam(name = "id") int id) {
-
+    @WebMethod(operationName = "retrieveState")
+    public StateDTO retrieveState(@WebParam(name = "nameState") String nameState) {
         ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
-        return objeto.retrieveCity(id);
+        return objeto.retrieveState(nameState);
+    }
+
+    @WebMethod(operationName = "retrieveCity")
+    public CityDTO retrieveCity(@WebParam(name = "nameState") String nameState, @WebParam(name = "nameCity") String nameCity) {
+        ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
+        return objeto.retrieveCity(nameState, nameCity);
     }
 
     @WebMethod(operationName = "retrieveAllCity_ByState")
-    public ArrayList<CityDTO> retrieveAllCity_ByState(@WebParam(name = "uf") String uf) {
+    public ArrayList<CityDTO> retrieveAllCity_ByState(@WebParam(name = "nameState") String nameState) {
         ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
-        return objeto.retrieveAllCity_ByState(uf);
+        return objeto.retrieveAllCity_ByState(nameState);
     }
 
     @WebMethod(operationName = "retrieveAllCity")
@@ -85,38 +59,51 @@ public class DadosAbertosServicos {
     }
 
     @WebMethod(operationName = "retrieveAllUBS_ByState")
-    public ArrayList<UBSDTO> retrieveAllUBS_ByState(@WebParam(name = "uf") String uf) {
+    public ArrayList<UBSDTO> retrieveAllUBS_ByState(@WebParam(name = "nameState") String nameState) {
         ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
-        return objeto.retrieveAllUBS_ByState(uf);
+        return objeto.retrieveAllUBS_ByState(nameState);
     }
 
     @WebMethod(operationName = "retrieveAllUBS_ByCity")
-    public ArrayList<UBSDTO> retrieveAllUBS_ByCity(@WebParam(name = "uf") String uf, @WebParam(name = "nameCity") String nameCity) {
+    public ArrayList<UBSDTO> retrieveAllUBS_ByCity(@WebParam(name = "nameState") String uf, @WebParam(name = "nameCity") String nameCity) {
         ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
         return objeto.retrieveAllUBS_ByCity(uf, nameCity);
     }
 
-    @WebMethod(operationName = "currentAveragePopulationByUBS")
-    public Double currentAveragePopulationByUBS(@WebParam(name = "uf") String uf) {
+    @WebMethod(operationName = "currentQuantityUBS_ByState")
+    public Integer currentQuantityUBS_ByState(@WebParam(name = "nameState") String nameState) {
         ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
-        return objeto.currentAveragePopulationByUBS(uf);
+        return objeto.currentQuantityUBS_ByState(nameState);
     }
 
-    @WebMethod(operationName = "providedAveragePopulationByUBS")
-    public Double providedAveragePopulationByUBS(@WebParam(name = "uf") String uf) {
+    @WebMethod(operationName = "providedQuantityUBS_ByState")
+    public ArrayList<Integer> providedQuantityUBS_ByState(@WebParam(name = "nameState") String nameState) {
         ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
-        return objeto.providedAveragePopulationByUBS(uf);
+        return objeto.providedQuantityUBS_ByState(nameState);
     }
 
-    @WebMethod(operationName = "currentAveragePopulationByUBS_City")
-    public Double currentAveragePopulationByUBS_City(@WebParam(name = "uf") String uf, @WebParam(name = "cityName") String cityName) {
+    @WebMethod(operationName = "currentQuantityUBS_ByCity")
+    public Integer currentQuantityUBS_ByCity(@WebParam(name = "stateName") String stateName, @WebParam(name = "cityName") String cityName) {
         ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
-        return objeto.currentAveragePopulationByUBS_City(uf, cityName);
+        return objeto.currentQuantityUBS_ByCity(stateName, cityName);
     }
 
-    @WebMethod(operationName = "providedAveragePopulationByUBS_City")
-    public Double providedAveragePopulationByUBS_City(@WebParam(name = "uf") String uf, @WebParam(name = "cityName") String cityName) {
+    @WebMethod(operationName = "providedQuantityUBS_ByCity")
+    public ArrayList<Integer> providedQuantityUBS_ByCity(@WebParam(name = "stateName") String stateName, @WebParam(name = "cityName") String cityName) {
         ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
-        return objeto.providedAveragePopulationByUBS_City(uf, cityName);
+        return objeto.providedQuantityUBS_ByCity(stateName, cityName);
     }
+
+    @WebMethod(operationName = "investmentUBS_ByState")
+    public Double investmentUBS_ByState(@WebParam(name = "nameState") String nameState) {
+        ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
+        return objeto.investmentUBS_ByState(nameState);
+    }
+
+    @WebMethod(operationName = "investmentUBS_ByCity")
+    public Double investmentUBS_ByCity(@WebParam(name = "stateName") String stateName, @WebParam(name = "cityName") String cityName) {
+        ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
+        return objeto.investmentUBS_ByCity(stateName, cityName);
+    }
+
 }
