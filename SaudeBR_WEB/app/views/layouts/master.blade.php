@@ -1,7 +1,7 @@
 {{-- Stored in app/views/layouts/master.blade.php --}}
 <!DOCTYPE HTML>
     <head>
-        <title>Campeonato de Dados Abertos</title>
+        <title>Saúde BR</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
         <?php
@@ -41,7 +41,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">CDA</a>
+                <a class="navbar-brand" href="/">Saúde BR</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,27 +60,33 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="navbar-form navbar-right" role="search"> 
+                <!--<form class="navbar-form navbar-right" role="search"> 
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search" required> 
                     </div>
                     <button type="submit" class="btn btn-default">
                         Submit
                     </button>
-                </form>
+                </form>-->
             </div><!-- /.navbar-collapse -->
         </nav>
         <ol class="breadcrumb">
             <li>
                 <a href="/">Home</a>
             </li>
-            <?php if(isset($addresses)): 
-                    $size = count($addresses);
+            <?php 
+            if(isset($addresses)): 
+                $size = count($addresses);
+
              ?>
             @for ($i = 0; $i < $size; $i++)
-            <li>
-                {{$addresses[$i]}}
-            </li>
+                @if($i < ($size -1))
+                    <li><?php echo HTML::link('ubs/'.$addresses[$i],$addresses[$i]); ?></li>  
+                @else
+                <li class="active">
+                    {{$addresses[$i]}}
+                </li>
+                @endif
             @endfor
             <?php endif; ?>
         </ol>

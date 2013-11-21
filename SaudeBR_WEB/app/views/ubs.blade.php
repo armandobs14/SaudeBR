@@ -11,26 +11,24 @@
     <div id="content">
         <table class="table">
             <thead>
-
-               <!-- <th>Department</th> -->
-                <th>Cidade</th>
-                <th>Estado</th>
-                <th>Tipo</th>
-                <th>Status</th>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+                <tr>
+                    <th><input type="text" id="txtColuna1"/></th>
+                    <th><input type="text" id="txtColuna2"/></th>
+                </tr> 
             </thead>
             <tbody>
                 @foreach($ubss as $ubs)
                     <?php
-                        $department = utf8_encode($ubs['department']);
-                        $data = explode('-',$ubs['name']);
-                        $data[0] = utf8_encode($data[0]);
+                        $name = utf8_encode($ubs['name']);
+                        $phone = utf8_encode($ubs['phone']);
                     ?>
                     <tr>
-                        <!--<td>{{$department}}</td>-->
-                        <td>{{$data[0]}}</td>
-                        <td>{{$data[1]}}</td>
-                        <td>{{$ubs['type']}}</td>
-                        <td>{{$ubs['status']}}</td>
+                        <td>{{$name}}</td>
+                        <td>{{$phone}}</td>
                     </tr>
                 @endforeach
             </tbody>

@@ -15,9 +15,9 @@ Route::pattern('city','([A-Za-zÀ-ú]+)(\s([A-Za-zÀ-ú]+))*');
 Route::group(array('prefix'=>'ubs'),function() {
     
     Route::get('/',function(){
-        $client = new nusoap_client('http://localhost:8080/DadosAbertos1/DadosAbertosServicos?wsdl',true);
+        $client = new nusoap_client('http://nees.com.br:8080/DadosAbertos1/Services?wsdl',true);
         $states = $client->call('retrieveAllState');
-        $ubss = $client->call('retrieveAllUBS');
+        //$ubss = $client->call('retrieveAllUBS');
         $addresses = array('ubs');
 
         return View::make('ubs')->with('states',$states['return'])->with('ubss',$ubss['return'])->with('addresses',$addresses);
@@ -25,30 +25,56 @@ Route::group(array('prefix'=>'ubs'),function() {
 
     Route::get('/{state}',function($state) {
     	$addresses = array($state);
-        $client=new nusoap_client('http://localhost:8080/DadosAbertos1/DadosAbertosServicos?wsdl',true);
-        $params = array('nameState' => utf8_decode($state));
+        $client=new nusoap_client('http://nees.com.br:8080/DadosAbertos1/Services?wsdl',true);
+        $params2 = array('nameState' => utf8_decode($state));
+        $params = array('stateName'=>utf8_decode($state));
 
-        $cities = $client->call('retrieveAllCity_ByState',$params);
         $states = $client->call('retrieveAllState');
         $ubs = $client->call('retrieveAllUBS_ByState',$params);
-        $quantity = $client->call('retrieveAllUBS_ByState',$params);
-        $ubsReturn = array();
+        $cities = $client->call('retrieveAllCity_ByState',$params);
+        $investiment = $client->call('investmentUBS_ByState',$params);
+        $ubsQuantity = $client->call('currentQuantityUBS_ByState',$params);
+        $ubsProvided = $client->call('providedQuantityUBS_ByState',$params);
 
-        if(isset($ubs) && $ubs != ''){
-            if(array_keys($ubs['return']) !== range(0, count($ubs['return']) - 1)) $ubsReturn[0] = $ubs['return'];    
-        }
-
-        return View::make('state')->with('states',$states['return'])->with('cities',$cities['return'])->with('addresses',$addresses)->with('ubss',$ubsReturn); //Colocar with($ubs)
+        return View::make('state')
+                    ->with('states',$states['return'])
+                    ->with('cities',$cities['return'])
+                    ->with('addresses',$addresses)
+                    ->with('ubss',$ubs['return'])
+                    ->with('investiment',$investiment['return'])
+                    ->with('ubsQuantity',$ubsQuantity['return'])
+                    ->with('ubsProvided',$ubsProvided['return']);
     });
     Route::get('/{state}/{city}',function($state,$city) {
-        echo "Eteste";
+        $addresses = array($state,$city);
+
+        $client=new nusoap_client('http://nees.com.br:8080/DadosAbertos1/Services?wsdl',true);
+        $params = array('stateName' => utf8_decode($state),'cityName'=>utf8_decode($city));
+        $params2 = array('nameState' => utf8_decode($state),'nameCity'=>utf8_decode($city));
+
+        $states = $client->call('retrieveAllState');    
+        $ubs = $client->call('retrieveAllUBS_ByCity',$params);
+
+        if(!isset($ubs['return']))
+            $ubs['return'] = array();
+
+        $investment = $client->call('investmentUBS_ByCity',$params);
+        $currentQuantity = $client->call('currentQuantityUBS_ByCity',$params);
+        $providedQuantity = $client->call('providedQuantityUBS_ByCity',array('stateName' => utf8_decode($state),'cityName'=>utf8_decode($city)));
+
+        return View::make('city')
+                            ->with('ubss',$ubs['return'])
+                            ->with('addresses',$addresses)
+                            ->with('states',$states['return'])
+                            ->with('investiment',$investment['return'])
+                            ->with('ubsQuantity',$currentQuantity['return'])
+                            ->with('ubsProvided',$providedQuantity['return']);
     });
 });
 
 Route::get('/',function() {
-        $client = new nusoap_client('http://localhost:8080/DadosAbertos1/DadosAbertosServicos?wsdl',true);
+        $client = new nusoap_client('http://nees.com.br:8080/DadosAbertos1/Services?wsdl',true);
         $states = $client->call('retrieveAllState');
-        //print_r($states['return']);
         return View::make('home')->with('states',$states['return']);
 });
 

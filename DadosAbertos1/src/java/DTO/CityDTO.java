@@ -6,7 +6,6 @@
 package DTO;
 
 import java.io.Serializable;
-import joint.codegen.nsbf6996f0.State;
 /*
  *
  * @author Judson
@@ -16,14 +15,14 @@ public class CityDTO implements Serializable {
 
     private String name;
     private Integer id;
-    private State state;
+    private String stateName;
     private int population;
     private int numberOfUBSCompleted;
     private int numberOfUBSProvided;
     private Double val_2011_2014;
     private Double val_pos_2014;
-    private Double investment;
-    private Double investment_total;
+    private Double investiment;
+    private Double investiment_total;
 
     public Double getVal_2011_2014() {
         return val_2011_2014;
@@ -41,20 +40,20 @@ public class CityDTO implements Serializable {
         this.val_pos_2014 = val_pos_2014;
     }
 
-    public Double getInvestment() {
-        return investment;
+    public Double getInvestiment() {
+        return investiment;
     }
 
-    public void setInvestment(Double investment) {
-        this.investment = investment;
+    public void setInvestiment(Double investment) {
+        this.investiment = investment;
     }
 
-    public Double getInvestment_total() {
-        return investment_total;
+    public Double getInvestiment_total() {
+        return investiment_total;
     }
 
-    public void setInvestment_total(Double investment_total) {
-        this.investment_total = investment_total;
+    public void setInvestiment_total(Double investment_total) {
+        this.investiment_total = investment_total;
     }
 
     public int getNumberOfUBSCompleted() {
@@ -89,18 +88,24 @@ public class CityDTO implements Serializable {
         this.id = id;
     }
 
-    public StateDTO getState() {
-        StateDTO stateDTO = new StateDTO();
+    public String getState() {       
+        
+        return stateName;
+    }
+
+    public void setState(String stateName) {
+        /*stateDTO = new StateDTO();
         stateDTO.setId(state.getId());
         stateDTO.setName(state.getFoafName());
         stateDTO.setUf(state.getUf());
         stateDTO.setNumberOfUBSCompleted(state.getNumberOfUBSCompleted());
         stateDTO.setNumberOfUBSProvided(state.getNumberOfUBSProvided());
-        return stateDTO;
-    }
-
-    public void setState(State state) {
-        this.state = state;
+        stateDTO.setInvestiment(state.getInvestiment());
+        stateDTO.setVal_2011_2014(state.getVal_2011_2014());
+        stateDTO.setVal_pos_2014(state.getVal_pos_2014());
+        stateDTO.setPopulation(state.getPopulation());
+        stateDTO.setInvestiment_total(state.getInvestiment_total());*/
+        this.stateName = stateName;
     }
 
     public void setName(String name) {

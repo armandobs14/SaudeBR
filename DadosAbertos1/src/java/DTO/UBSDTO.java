@@ -6,8 +6,6 @@
 package DTO;
 
 import java.io.Serializable;
-import joint.codegen.nsbf6996f0.City;
-import joint.codegen.nsbf6996f0.State;
 
 /**
  *
@@ -17,8 +15,8 @@ public class UBSDTO implements Serializable {
 
     private int id;
     private String name;
-    private City city;
-    private State state;
+    private String cityName;
+    private String stateName;
     private String street;
     private String district;
     private String phone;
@@ -86,41 +84,52 @@ public class UBSDTO implements Serializable {
         this.name = name;
     }
 
-    public CityDTO getCity() {
-        CityDTO cityDTO = new CityDTO();
-        cityDTO.setId(city.getId());
-        cityDTO.setName(city.getFoafName());
-        cityDTO.setPopulation(city.getPopulation());
-        cityDTO.setState(city.getHasState());
-        if (city.getNumberOfUBSCompleted() == null) {
-            city.setNumberOfUBSCompleted(0);
-        } else {
-            cityDTO.setNumberOfUBSCompleted(city.getNumberOfUBSCompleted());
-        }
-        if (city.getNumberOfUBSProvided() == null) {
-            city.setNumberOfUBSProvided(0);
-        } else {
-            cityDTO.setNumberOfUBSProvided(city.getNumberOfUBSProvided());
-        }
-        return cityDTO;
+    public String getCity() {
+
+        return cityName;
     }
 
-    public void setCity(City city) {
-        this.city = city;
+    public void setCity(String city) {
+        /*cityDTO = new CityDTO();
+         cityDTO.setId(city.getId());
+         cityDTO.setName(city.getFoafName());
+         cityDTO.setPopulation(city.getPopulation());
+         cityDTO.setState(city.getHasState());
+         cityDTO.setVal_2011_2014(city.getVal_2011_2014());
+         cityDTO.setVal_pos_2014(city.getVal_pos_2014());
+         cityDTO.setInvestiment(city.getInvestiment());
+         cityDTO.setInvestiment_total(city.getInvestiment_total());
+         if (city.getNumberOfUBSCompleted() == null) {
+         cityDTO.setNumberOfUBSCompleted(0);
+         } else {
+         cityDTO.setNumberOfUBSCompleted(city.getNumberOfUBSCompleted());
+         }
+         if (city.getNumberOfUBSProvided() == null) {
+         cityDTO.setNumberOfUBSProvided(0);
+         } else {
+         cityDTO.setNumberOfUBSProvided(city.getNumberOfUBSProvided());
+         }*/
+        this.cityName = city;
     }
 
-    public StateDTO getState() {
-        StateDTO stateDTO = new StateDTO();
-        stateDTO.setId(state.getId());
-        stateDTO.setName(state.getFoafName());
-        stateDTO.setUf(state.getUf());
-        stateDTO.setNumberOfUBSCompleted(state.getNumberOfUBSCompleted());
-        stateDTO.setNumberOfUBSProvided(state.getNumberOfUBSProvided());
-        return stateDTO;
+    public String getState() {
+
+        return stateName;
     }
 
-    public void setState(State state) {
-        this.state = state;
+    public void setState(String stateName) {
+        /*stateDTO = new StateDTO();
+         stateDTO.setId(state.getId());
+         stateDTO.setName(state.getFoafName());
+         stateDTO.setUf(state.getUf());
+         stateDTO.setNumberOfUBSCompleted(state.getNumberOfUBSCompleted());
+         stateDTO.setNumberOfUBSProvided(state.getNumberOfUBSProvided());
+         stateDTO.setInvestiment(state.getInvestiment());
+         stateDTO.setVal_2011_2014(state.getVal_2011_2014());
+         stateDTO.setVal_pos_2014(state.getVal_pos_2014());
+         stateDTO.setPopulation(state.getPopulation());
+         stateDTO.setInvestiment_total(state.getInvestiment_total());*/
+        this.stateName = stateName;
     }
 
     public String getStreet() {

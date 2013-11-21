@@ -21,7 +21,16 @@ public class StateDTO implements Serializable {
     private String name;
     private Double val_2011_2014;
     private Double val_pos_2014;
-    private Double investment;
+    private Double investiment;
+    private Double investiment_total;
+
+    public Double getInvestiment_total() {
+        return investiment_total;
+    }
+
+    public void setInvestiment_total(Double investiment_total) {
+        this.investiment_total = investiment_total;
+    }
 
     public Double getVal_2011_2014() {
         return val_2011_2014;
@@ -39,22 +48,13 @@ public class StateDTO implements Serializable {
         this.val_pos_2014 = val_pos_2014;
     }
 
-    public Double getInvestment() {
-        return investment;
+    public Double getInvestiment() {
+        return investiment;
     }
 
-    public void setInvestment(Double investment) {
-        this.investment = investment;
+    public void setInvestiment(Double investiment) {
+        this.investiment = investiment;
     }
-
-    public Double getInvestment_total() {
-        return investment_total;
-    }
-
-    public void setInvestment_total(Double investment_total) {
-        this.investment_total = investment_total;
-    }
-    private Double investment_total;
 
     public int getId() {
         return id;

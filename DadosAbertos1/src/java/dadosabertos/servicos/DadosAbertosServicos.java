@@ -65,9 +65,9 @@ public class DadosAbertosServicos {
     }
 
     @WebMethod(operationName = "retrieveAllUBS_ByCity")
-    public ArrayList<UBSDTO> retrieveAllUBS_ByCity(@WebParam(name = "nameState") String uf, @WebParam(name = "nameCity") String nameCity) {
+    public ArrayList<UBSDTO> retrieveAllUBS_ByCity(@WebParam(name = "nameState") String nameState, @WebParam(name = "nameCity") String nameCity) {
         ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
-        return objeto.retrieveAllUBS_ByCity(uf, nameCity);
+        return objeto.retrieveAllUBS_ByCity(nameState, nameCity);
     }
 
     @WebMethod(operationName = "currentQuantityUBS_ByState")
@@ -83,7 +83,7 @@ public class DadosAbertosServicos {
     }
 
     @WebMethod(operationName = "currentQuantityUBS_ByCity")
-    public Integer currentQuantityUBS_ByCity(@WebParam(name = "stateName") String stateName, @WebParam(name = "cityName") String cityName) {
+    public Integer currentQuantityUBS_ByCity(@WebParam(name = "nameState") String stateName, @WebParam(name = "nameCity") String cityName) {
         ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
         return objeto.currentQuantityUBS_ByCity(stateName, cityName);
     }
@@ -101,7 +101,7 @@ public class DadosAbertosServicos {
     }
 
     @WebMethod(operationName = "investmentUBS_ByCity")
-    public Double investmentUBS_ByCity(@WebParam(name = "stateName") String stateName, @WebParam(name = "cityName") String cityName) {
+    public Double investmentUBS_ByCity(@WebParam(name = "nameState") String stateName, @WebParam(name = "nameCity") String cityName) {
         ClassePrincipalProvisoria objeto = new ClassePrincipalProvisoria();
         return objeto.investmentUBS_ByCity(stateName, cityName);
     }
